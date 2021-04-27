@@ -27,6 +27,6 @@ build/Release
 node_modules
 
 # distribution
-dist
+#dist
 
 .DS_Store
