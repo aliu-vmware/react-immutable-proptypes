@@ -42,8 +42,6 @@
     "react": "^0.14.10",
     "react-dom": "^0.14.10"
   },
-  "dependencies": {
-    "invariant": "^2.2.4"
-  },
+  "dependencies": {},
   "typings": "typings/index.d.ts"
 }

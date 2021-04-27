@@ -5,7 +5,6 @@
  *     ImmutableTypes.shape  is based on React.PropTypes.shape, but for any Immutable.Iterable
  */
 var Immutable = require('immutable');
-var invariant = require('invariant');
 
 var ANONYMOUS = '<<anonymous>>';
 
@@ -39,9 +38,7 @@ if (process.env.NODE_ENV !== 'production') {
     iterable: createImmutableTypeChecker('Iterable', Immutable.Iterable.isIterable)
   };
 } else {
-  var productionTypeChecker = function () {
-    invariant(false, 'ImmutablePropTypes type checking code is stripped in production.');
-  };
+  var productionTypeChecker = function () {};
   productionTypeChecker.isRequired = productionTypeChecker;
   var getProductionTypeChecker = function () {
     return productionTypeChecker;
